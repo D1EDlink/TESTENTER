@@ -34,50 +34,56 @@ section {
 }
 
 .main-content {
-    padding: 20px;
     background-image: url('img/form1.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 250px;
-    height: 300px;
+    background-position: center;
+    width: 400px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-position: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.mascot {
+    width: 120px;
+    position: absolute;
+    top: -45px;
+}
+
+.text-box {
+    text-align: center;
+    padding: 5px;
+    margin-top: -5px;
 }
 
 .main-title {
     color: #2B2D35;
-    font-size: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px 15px;
-    border-radius: 10px;
-    display: inline-block;
+    font-size: 34px;
+    margin-bottom: 0px;
 }
 
 .main-subtitle {
-    font-size: 20px;
+    font-size: 15px;
     color: #2B2D35;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 .button {
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 50px;
     border: 2px solid #000;
     background-color: #BBFF2C;
     box-shadow: 5px 5px 0 #000;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: 0.3s;
 }
 
 .button a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -92,4 +98,20 @@ section {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+}
+
+
+.planet-background {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(187deg);
+    width: 405px;
+    height: 330px;
+}
+
+.planet-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

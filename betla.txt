@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <section id="main">
+        <div class="main-block">
+            <div class="main-content">
+                <img src="img/maskot.png" class="mascot" alt="Mascot">
+                <div class="text-box">
+                    <h1 class="main-title">Artem Nazarenko</h1>
+                    <p class="main-subtitle">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#about">More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content-block">About Section</div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="content-block">Skills Section</div>
+    </section>
+
+    <section id="works" class="section">
+        <div class="content-block">Works Section</div>
+    </section>
+
+    <section id="comments" class="section">
+        <div class="content-block">Comments Section</div>
+    </section>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main { background-image: url('img/bgMAIN.png'); }
+#about { background-image: url('img/bgABOUT.png'); }
+#skills { background-image: url('img/bgSKILLS.png'); }
+#works { background-image: url('img/bgWORKS.png'); }
+#comments { background-image: url('img/bgCOMMENTS.png'); }
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-content {
+    background-image: url('img/form1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.mascot {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+}
+
+.text-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    color: #2B2D35;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.main-subtitle {
+    font-size: 16px;
+    color: #2B2D35;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: #BBFF2C;
+    box-shadow: 5px 5px 0 #000;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.button:hover {
+    background: #a0d826;
+}
+
+.content-block {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
