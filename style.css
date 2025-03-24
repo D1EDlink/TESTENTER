@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+#main{
+    background-image: url('img/bgMAIN.png');
+}
+
+#about{
+    background-image: url('img/bgABOUT.png');
+}
+
+#skills{
+    background-image: url('img/bgSKILLS.png');
+}
+
+#works{
+    background-image: url('img/bgWORKS.png');
+}
+
+#comments{
+    background-image: url('img/bgCOMMENTS.png');
+}
+
+.main-block,.about-block,.skills-block,.works-block,.comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
