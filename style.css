@@ -1,42 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
 
-section{
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
     min-height: 100vh;
-}
-
-#main{
-    background-image: url('img/bgMAIN.png');
-}
-
-#about{
-    background-image: url('img/bgABOUT.png');
-}
-
-#skills{
-    background-image: url('img/bgSKILLS.png');
-}
-
-#works{
-    background-image: url('img/bgWORKS.png');
-}
-
-#comments{
-    background-image: url('img/bgCOMMENTS.png');
-}
-
-.main-block,.about-block,.skills-block,.works-block,.comments-block{
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    justify-content: center;
 }
 
+#main { background-image: url('img/bgMAIN.png'); }
+#about { background-image: url('img/bgABOUT.png'); }
+#skills { background-image: url('img/bgSKILLS.png'); }
+#works { background-image: url('img/bgWORKS.png'); }
+#comments { background-image: url('img/bgCOMMENTS.png'); }
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    background-image: url('img/form1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.main-title {
+    color: #2B2D35;
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.main-subtitle {
+    font-size: 20px;
+    color: #2B2D35;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: #BBFF2C;
+    box-shadow: 5px 5px 0 #000;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.button:hover {
+    background: #a0d826;
+}
+
+.content-block {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
