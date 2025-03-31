@@ -14,7 +14,6 @@
     font-family: "Oswald", sans-serif;
 }
 
-
 body {
     text-align: center;
     background-color: #f4f4f4;
@@ -82,12 +81,11 @@ section {
 }
 
 .button {
-    padding: 12px 25px;
-    border-radius: 50px;
-    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 25px;
     background-color: #BBFF2C;
-    box-shadow: 5px 5px 0 #000;
-    margin-top: 15px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
     transition: 0.3s;
 }
 
@@ -101,6 +99,7 @@ section {
     background: #a0d826;
 }
 
+
 .content-block {
     font-size: 24px;
     font-weight: bold;
@@ -109,7 +108,6 @@ section {
     padding: 20px;
     border-radius: 10px;
 }
-
 
 .planet-background {
     position: absolute;
@@ -143,12 +141,93 @@ section {
 }
 
 .title{
+    
     padding-top: 100px;
     text-align: center;
     color: #fff;
     font-size: 80px;
     text-shadow: 2.5px 2.5px 0 #616161;
     text-shadow: 5px 5px 0 #000;
-    
 }
 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-title{
+    color: #fff;
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.about-card .card-dots {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: "Oswald", sans-serif;
+}
+
+.about-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.about-text-box {
+    background: #792AFF;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-card {
+    background: #d8d8d8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
