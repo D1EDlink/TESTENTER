@@ -7,6 +7,24 @@
     }
 }
 
+@keyframes p-m2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(70px);
+    }
+}
+
+@keyframes c-m1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(70px);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,16 +48,46 @@ section {
 }
 
 #main { background-image: url('img/bgMAIN.png'); }
-#about { background-image: url('img/bgABOUT.png'); }
+#about {
+    background-image: url('img/bgABOUT.png');
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 #skills { background-image: url('img/bgSKILLS.png'); }
 #works { background-image: url('img/bgWORKS.png'); }
 #comments { background-image: url('img/bgCOMMENTS.png'); }
 
-.moving-planet, .moving-planet2, .moving-cloud{
+.moving-planet{
     animation-name: p-m;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+.moving-planet2{
+    animation-name: p-m2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.moving-cloud-animetion{
+    animation-name: c-m1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.moving-cloud{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
 }
 
 .main-block {
@@ -106,6 +154,46 @@ section {
     background: #a0d826;
 }
 
+.button1{
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: #BBFF2C;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
+    transition: 0.3s;
+}
+
+.button1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.button1:hover {
+    background: #a0d826;
+}
+.button2{
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: #BBFF2C;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
+    transition: 0.3s;
+}
+
+.button2 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.button2:hover {
+    background: #a0d826;
+}
+
+
 
 .content-block {
     font-size: 24px;
@@ -156,25 +244,34 @@ section {
     text-shadow: 2.5px 2.5px 0 #616161;
     text-shadow: 5px 5px 0 #000;
 }
+.titleabout{
+    margin-bottom: 50px;
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 2.5px 2.5px 0 #616161;
+    text-shadow: 5px 5px 0 #000;
+}
 
 .about-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
     width: 100%;
-    max-width: 500px;
-    text-align: center;
 }
 
-.about-title{
-    color: #fff;
+.about-title {
     font-size: 20px;
-    max-width: 463px;
-    margin-bottom: 20px;
     font-weight: 700;
+    margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
+    color: #fff;
 }
 
 
@@ -186,31 +283,28 @@ section {
     color: black;
 }
 
-.about-card p{
+.about-card p {
     color: #000;
-    font-size: 17px;
-    align-self: start;
-    padding-left: 20px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 24px;
     font-family: "Oswald", sans-serif;
-}
+  }
 
 .about-card img {
     width: 100%;
-    max-width: 250px;
     border-radius: 10px;
-}
+    margin-bottom: 10px;
+  }
 
 
 .about-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 40px;
     width: 100%;
-    max-width: 800px;
-    text-align: left;
 }
 
 .about-text-box {
@@ -218,7 +312,8 @@ section {
     color: white;
     padding: 20px;
     border-radius: 15px;
-    width: 50%;
+    flex: 1 1 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,28 +323,21 @@ section {
     background: #d8d8d8;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
-}
+    flex: 1 1 250px;
+    max-width: 300px;
+    position: relative;
+    text-align: left;
+  }
 
 .about-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 20px;
 }
-
-.moving-cloud{
-    background: url(img/cloud.png);
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 162px;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    z-index: 10; 
-}
-
 
 
 .skills-card{
@@ -257,6 +345,7 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     height: 450px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,6 +364,23 @@ section {
     align-items: center;
     max-width: 500px;
     font-family: "Oswald", sans-serif;
+}
+
+.skills-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding-top: 100px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
 .moving-planet2{
