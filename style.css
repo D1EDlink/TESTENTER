@@ -511,11 +511,11 @@ nav {
     background: #d8d8d8;
     padding: 20px;
     border-radius: 10px;
-    flex: 1 1 250px; /* Чтобы карточки были одинакового размера */
-    max-width: 300px; /* Максимальная ширина карточки */
+    flex: 1 1 250px; 
+    max-width: 300px; 
     position: relative;
     text-align: left;
-    box-shadow: 7px 7px 0 #000000; /* Тень для карточки */
+    box-shadow: 7px 7px 0 #000000; 
     margin-bottom: 20px;
 }
 
