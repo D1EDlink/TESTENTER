@@ -1,4 +1,4 @@
-@media (max-width: 768pxpx) {
+@media (max-width: 768px) {
     .nav-links{
         display: none;
     }
@@ -96,8 +96,34 @@
     .project {
         width: 90%; 
     }
-
-
+    .button{
+        width: 150px;
+        height: 40px;
+        z-index: 2;
+        }
+    .button a{
+        font-size: 15px;
+    }
+    .button1{
+        width: 150px;
+        height: 40px;
+        z-index: 2;
+        }
+    .button1 a{
+        font-size: 15px;
+    }
+    .button2{
+        width: 150px;
+        height: 40px;
+        z-index: 2;
+        }
+    .button2 a{
+        font-size: 15px;
+    }
+    .mobile-button {
+        display: flex;
+    }
+    
 }
 
 @keyframes p-m {
@@ -193,6 +219,13 @@ section {
     align-items: center; 
     justify-content: center;
 }
+
+
+
+.hide{
+    display: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -667,4 +700,51 @@ footer{
 
 .active{
     background-color: #BBFF2C;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+
+.mobile-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-links .nav-link{
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
+.off-scroll{
+    overflow: hidden;
+}
+
+.mobile-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease;
 }
